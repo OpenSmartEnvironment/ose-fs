@@ -1,0 +1,26 @@
+{
+  "name": "ose-fs",
+  "preferGlobal": true,
+  "version": "0.1.0",
+  "author": "Jan Snasel <snaselj@gmail.com>",
+  "description": "Open Smart Environment Media Player extension for playing local multimedia file.",
+  "contributors": [
+    {
+      "name": "Jan Snasel",
+      "email": "snaselj@gmail.com"
+    },
+    {
+      "name": "Fred Rooks",
+      "email": "fred@fredrooks.com"
+    }
+  ],
+  "main": "./lib/index",
+  "keywords": [
+    "open smart environment",
+    "local filesystem"
+  ],
+  "dependencies" : {
+    "async"   :  "*"
+  },
+  "license": "GPL-3.0+"
+}
