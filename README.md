@@ -2,7 +2,9 @@
 
 This package contains definitions of [entry kinds](http://opensmartenvironment.github.io/doc/classes/ose.lib.kind.html) that represent
 files and directories and gives OSE access to the filesystem and
-registers DVB as a source to the [OSE Media player](http://opensmartenvironment.github.io/doc/modules/media.html).
+registers fs as a source to the [OSE Media player](http://opensmartenvironment.github.io/doc/modules/media.html).
+
+See [bundle.media](http://opensmartenvironment.github.io/doc/modules/bundle.media.html) example application
 
 ## Status
 - Pre-alpha stage (insecure and buggy)
@@ -11,7 +13,8 @@ registers DVB as a source to the [OSE Media player](http://opensmartenvironment.
 - No test suite
 
 This is not yet a piece of download-and-use software. Its important
-to understand the basic principles covered by this documentation.
+to understand the basic principles covered by the
+[documentation](http://opensmartenvironment.github.io/doc/).
 
 Use of this software is currently recommended only for users that
 wish participate in the development process, see
