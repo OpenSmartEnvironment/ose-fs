@@ -10,10 +10,10 @@ exports = require('ose')
  */
 
 /**
- * @caption OSE Filesystem content
+ * @caption Filesystem content
  *
  * @readme
- * Provides files of OSE Filesystem package to the browser.
+ * Provides files of [ose-fs] package to the browser.
  *
  * @class fs.content
  * @type singleton
