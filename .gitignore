@@ -3,3 +3,4 @@
 *_assh_*
 *.swp
 build/
+node_modules
