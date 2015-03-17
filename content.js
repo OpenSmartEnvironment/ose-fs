@@ -1,9 +1,7 @@
 'use strict';
 
-exports = require('ose')
-  .singleton(module, 'ose/lib/http/content')
-  .exports
-;
+var O = require('ose').object(module, Init, 'ose/lib/http/content');
+exports = O.init();
 
 /** Docs  {{{1
  * @module fs
@@ -21,12 +19,14 @@ exports = require('ose')
  */
 
 // Public {{{1
-exports.addFiles = function() {
+function Init() {  // {{{2
+  O.super.call(this);
+
   this.addModule('lib/dir/browser');
   this.addModule('lib/dir/index');
-  this.addModule('lib/dir/bb/list');
   this.addModule('lib/file/browser');
   this.addModule('lib/file/index');
+  this.addModule('lib/gaia/list');
   this.addModule('lib/index');
 };
 
