@@ -22,7 +22,6 @@ exports = O.init();
 function Init() {  // {{{2
   O.super.call(this);
 
-  this.addModule('lib/dir/browser');
   this.addModule('lib/dir/index');
   this.addModule('lib/file/browser');
   this.addModule('lib/file/index');
