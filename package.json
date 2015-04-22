@@ -1,6 +1,5 @@
 {
   "name": "ose-fs",
-  "preferGlobal": true,
   "version": "0.1.6",
   "author": "Jan Snasel <snaselj@gmail.com>",
   "description": "Open Smart Environment Media Filesystem package",
