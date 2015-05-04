@@ -22,9 +22,5 @@
     "open smart environment",
     "local filesystem"
   ],
-  "dependencies": {
-    "async": "^0.9.0",
-    "level": "^0.18.0"
-  },
   "license": "GPL-3.0+"
 }
