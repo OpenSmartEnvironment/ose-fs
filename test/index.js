@@ -30,7 +30,7 @@ exports.add('Get space', function(cb) {  // {{{2
   O.getSpace('testSpace', function(err, space) {
     if (err) return cb(err);
 
-    Equal(O.subjectState.READY, space.subjectState, 'exports.space state');
+    Equal(space.SUBJECT_STATE.READY, space.subjectState, 'exports.space state');
     Equal('testSpace', space.name, 'exports.space name');
 
     exports.space = space;
@@ -45,7 +45,7 @@ exports.add('Find shard', function(cb) {  // {{{2
   exports.space.findShard('fsShard', function(err, shard) {
     if (err) return cb(err);
 
-    Equal(O.subjectState.READY, shard.subjectState, 'exports.shard state');
+    Equal(shard.SUBJECT_STATE.READY, shard.subjectState, 'exports.shard state');
     Equal('fsShard', shard.alias, 'exports.shard alias');
 
     exports.shard = shard;
@@ -58,7 +58,7 @@ exports.add('Get shard', function(cb) {  // {{{2
   exports.space.getShard(exports.shard.id, function(err, shard) {
     if (err) return cb(err);
 
-    Equal(O.subjectState.READY, shard.subjectState, 'exports.shard state');
+    Equal(shard.SUBJECT_STATE.READY, shard.subjectState, 'exports.shard state');
     Equal(exports.shard, shard, 'exports.shard');
 
     return cb();
@@ -69,7 +69,7 @@ exports.add('Find entry', function(cb) {  // {{{2
   exports.shard.find('README.md', function(err, entry) {
     if (err) return cb(err);
 
-    Equal(O.subjectState.READY, entry.subjectState, 'Entry state');
+    Equal(entry.SUBJECT_STATE.READY, entry.subjectState, 'Entry state');
     Equal('/README.md', entry.id, 'Entry id');
 
     exports.entry = entry;
@@ -83,7 +83,7 @@ exports.add('Get entry', function(cb) {  // {{{2
   exports.shard.get(exports.entry.id, function(err, entry) {
     if (err) return cb(err);
 
-    Equal(O.subjectState.READY, entry.subjectState, 'Entry state');
+    Equal(entry.SUBJECT_STATE.READY, entry.subjectState, 'Entry state');
     Equal(exports.entry, entry, 'Entry');
 
     return cb();
@@ -95,7 +95,7 @@ exports.add('Track entry', function(cb) {  // {{{2
   socket.on('error', cb);
   socket.on('close', cb);
   socket.on('open', function(entry) {
-    Equal(O.subjectState.READY, entry.subjectState, 'Entry state');
+    Equal(entry.SUBJECT_STATE.READY, entry.subjectState, 'Entry state');
     Equal(exports.entry, entry, 'Entry');
 
     if (O.runtime === 'browser') {
