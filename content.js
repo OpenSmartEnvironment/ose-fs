@@ -24,4 +24,5 @@ exports.addModule('lib/file/browser');
 exports.addModule('lib/file/index');
 exports.addModule('lib/gaia/list');
 exports.addModule('lib/index');
+exports.addModule('lib/remote');
 
