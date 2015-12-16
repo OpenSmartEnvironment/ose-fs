@@ -27,7 +27,7 @@ exports.cleanup = function(err) {  // {{{2
 };
 
 exports.add('Get space', function(cb) {  // {{{2
-  O.getSpace('testSpace', function(err, space) {
+  O.data.getSpace('testSpace', function(err, space) {
     if (err) return cb(err);
 
     Equal(space.SUBJECT_STATE.READY, space.subjectState, 'exports.space state');
@@ -148,19 +148,16 @@ exports.add('Find all js files', function(cb) {  // {{{2
   }, function(err, vals) {
     if (err) return cb(err);
 
-//  console.log('FIND FILES', vals);
+//    console.log('FIND FILES', vals);
     Assert.deepEqual(vals, [
       '/content.js',
-      '/lib/db.js',
-      '/lib/dir/index.js',
-      '/lib/file/browser.js',
-      '/lib/file/index.js',
-      '/lib/gaia/list.js',
       '/lib/index.js',
-      '/lib/jsonDb.js',
-      '/lib/schema.js',
+      '/lib/inode/gaia/list.js',
+      '/lib/inode/index.js',
+      '/lib/node.js',
+      '/lib/remote.js',
       '/test/index.js',
-      '/test/node.js'
+      '/test/node.js',
     ]);
 
     return cb();
@@ -188,16 +185,13 @@ exports.add('Find all files in /lib', function(cb) {  // {{{2
   }, function(err, vals) {
     if (err) return cb(err);
 
-//    console.log('FIND FILES', vals);
+    console.log('FIND FILES', vals);
     Assert.deepEqual(vals, [
-      '/lib/db.js',
-      '/lib/dir/index.js',
-      '/lib/file/browser.js',
-      '/lib/file/index.js',
-      '/lib/gaia/list.js',
       '/lib/index.js',
-      '/lib/jsonDb.js',
-      '/lib/schema.js',
+      '/lib/inode/gaia/list.js',
+      '/lib/inode/index.js',
+      '/lib/node.js',
+      '/lib/remote.js',
     ]);
 
     return cb();

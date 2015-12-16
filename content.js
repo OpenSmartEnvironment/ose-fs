@@ -3,7 +3,7 @@
 var O = require('ose').object(module, 'ose/lib/http/content');
 exports = O.init();
 
-/** Docs  {{{1
+/** Docs
  * @module fs
  */
 
@@ -18,11 +18,9 @@ exports = O.init();
  * @extends ose.lib.http.content
  */
 
-// Public {{{1
-exports.addModule('lib/dir/index');
-exports.addModule('lib/file/browser');
-exports.addModule('lib/file/index');
-exports.addModule('lib/gaia/list');
+// Public
 exports.addModule('lib/index');
+exports.addModule('lib/inode/gaia/list');
+exports.addModule('lib/inode/index');
 exports.addModule('lib/remote');
 
