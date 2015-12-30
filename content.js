@@ -20,7 +20,6 @@ exports = O.init();
 
 // Public
 exports.addModule('lib/index');
-exports.addModule('lib/inode/gaia/list');
 exports.addModule('lib/inode/index');
 exports.addModule('lib/remote');
 
