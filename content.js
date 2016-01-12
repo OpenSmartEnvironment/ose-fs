@@ -20,6 +20,6 @@ exports = O.init();
 
 // Public
 exports.addModule('lib/index');
-exports.addModule('lib/inode/index');
+exports.addModule('lib/inode');
 exports.addModule('lib/remote');
 
