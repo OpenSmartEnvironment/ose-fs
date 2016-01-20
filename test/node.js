@@ -1,6 +1,6 @@
 'use strict';
 
-var O = require('ose').module(module);
+const O = require('ose')(module);
 
 var Path = require('path');
 
