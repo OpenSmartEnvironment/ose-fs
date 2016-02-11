@@ -21,7 +21,7 @@ require('ose/lib/plugins').read({  // {{{1
   },
   /*
   fsDashboard: function(name, val, deps) {  // {{{2
-    var d = require('ose/lib/plugins').plugins['ose-gaia'].data.dashboard;
+    var d = require('ose/lib/plugins').plugins['ose-html5'].data.dashboard;
     d.push({
       caption: 'Aliases',
       view: 'list',

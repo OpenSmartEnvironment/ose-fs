@@ -155,7 +155,6 @@ exports.add('Find all js files', function(cb) {  // {{{2
     Assert.deepEqual(vals, [
       '/content.js',
       '/lib/index.js',
-      '/lib/inode/gaia/list.js',
       '/lib/inode/index.js',
       '/lib/node.js',
       '/lib/remote.js',
@@ -191,7 +190,6 @@ exports.add('Find all files in /lib', function(cb) {  // {{{2
     console.log('FIND FILES', vals);
     Assert.deepEqual(vals, [
       '/lib/index.js',
-      '/lib/inode/gaia/list.js',
       '/lib/inode/index.js',
       '/lib/node.js',
       '/lib/remote.js',
